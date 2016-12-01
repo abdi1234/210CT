@@ -1,0 +1,13 @@
+import random
+seq=[5,3,8,6,1,9,2,7]
+List1=[]
+
+def ListShuffler(t):
+    while seq!=[]:
+        n=random.randrange(len(seq))
+        List1.append(seq[n])
+        del seq[n]
+
+        
+ListShuffler(seq)
+print (List1)
