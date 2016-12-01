@@ -1,11 +1,25 @@
-def PerfectSQ(x):
-    while ( x % x**0.5) !=0:
-        x-=1
-    return x
+import math
+
+def PerfSquare(num):
+    if num >= 1:
+        numInt = math.sqrt(num)
+        numInt = int(numInt)
+        return( str(numInt*numInt))
+    else:
+        return("This number is not positive")
+
+print(PerfSquare(125))
+
     
     
-   pseudocode
-PERFECTSQ(X)
-      WHILE X MOD X X**0.5 ≠ 0
-               X < - X    - 1
-      RETURN   X
+#  pseudocode
+
+#PerfSquare(num):
+#    if num >= 1:
+#        numInt <- square root of num
+#        numInt <- int(numInt)
+#        return numInt * numInt
+#    else
+#        return("This number is not positive")
+
+#output PerfSquare(125)
