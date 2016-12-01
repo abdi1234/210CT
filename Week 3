@@ -1,0 +1,19 @@
+def rev(str):
+    rev=""
+    for i in range(0,len(str)):
+         rev = rev + str[(len(str)-1)-i]
+    return rev
+
+
+print(rev("This is awesome"))
+
+
+TEXT < - USER INPUT
+WORDS< - SPLIT (TEXT,” ”)
+INDEX <- LENGTH(WORDS) -1
+TEXT <- “ ”
+WHILE<- INDEX  >= 0
+      TEXT += WORDS [INDEX] + “ “
+      INDEX <- INDEX - 1
+
+PRINT TEXT
