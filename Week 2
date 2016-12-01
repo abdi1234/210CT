@@ -1,0 +1,11 @@
+def PerfectSQ(x):
+    while ( x % x**0.5) !=0:
+        x-=1
+    return x
+    
+    
+   pseudocode
+PERFECTSQ(X)
+      WHILE X MOD X X**0.5 ≠ 0
+               X < - X    - 1
+      RETURN   X
