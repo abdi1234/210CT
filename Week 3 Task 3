@@ -16,12 +16,12 @@ print (RemoveVowels("beautiful"))
 
 #pseudocode
 
-NOVOWELS(str):
-      If str is empty:
-         Return str 
-If str [0] in  in ['a','e','i','o','u','A','E','I','O','U']:
+#NOVOWELS(str):
+#      If str is empty:
+#         Return str 
+#If str [0] in  in ['a','e','i','o','u','A','E','I','O','U']:
 
-    Return RemoveVowels
-    Else:
-           Return str[0] + noVowels (str[1:])
-Str -> input string 
+#    Return RemoveVowels
+#    Else:
+#           Return str[0] + noVowels (str[1:])
+# Str -> input string 
