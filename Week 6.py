@@ -34,19 +34,34 @@ def postorder(tree):
   
 
 def in_order(tree):
-    if(tree.left!=None):
-        in_order(tree.left)
-    print (tree.value)
-    if(tree.right!=None):
-        in_order(tree.right)
+
+    stack = []
+    finished = False
+
+
+    while (finished == False):  
+
+        if tree != None:        #If tree isnt empty
+            stack.append(tree)  #add the node to the stack
+
+            tree = tree.left    #move to the tree to the left side
+
+        else:
+
+            if (len(stack) > 0):#if the length of the stack is more than 0
+                tree = stack.pop()#moves the most recent value from stack to tree
+                print(tree.value)
+                tree = tree.right#moves to the right value
+            else:
+                finished = True
  
 if __name__ == '__main__':
     
   t=tree_insert(None,6);
-  tree_insert(t,10)
-  tree_insert(t,5)
-  tree_insert(t,2)
-  tree_insert(t,3)
-  tree_insert(t,4)
   tree_insert(t,11)
+  tree_insert(t,6)
+  tree_insert(t,2)
+  tree_insert(t,5)
+  tree_insert(t,8)
+  tree_insert(t,1)
   in_order(t)
