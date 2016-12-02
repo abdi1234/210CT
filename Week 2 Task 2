@@ -1,0 +1,25 @@
+MAT <- INPUT matrix
+
+FOR i <- 1 TO n
+	FOR j <- 1 TO n
+		INPUT element at position MAT[i][ j]
+
+MAT[i][j]
+
+To add two matrices;
+
+// A and B are existing matrices, C is the matrix of A + B
+MATRIX-ADDITION (A, B)
+FOR i <- 1 TO n
+	FOR j <- 1 TO n
+		C[I][j] <- A[i][j] + B[i][j]
+return C
+
+To multiply two matrices;
+
+// A and B are existing matrices, C is the matrix of A * B
+MATRIX_MULTIPLICATION (A, B)
+	IF LENGTH(A) = LENGTH(B[i])
+		FOR i <- 1 TO n
+	ELSE
+		return FALSE
