@@ -37,7 +37,7 @@ class Graph:
      def __init__(self):
         self.graphDict = {}
 
-     def addVertex(self,label):
+     def addVert(self,label):
           if label not in self.graphDict:
                self.graphDict[label] = []
                return("Vertex created")
@@ -49,10 +49,10 @@ class Graph:
           self.graphDict[vertex2].append(vertex1)
           return("An edge has been created between",vertex1," and ",vertex2)
 
-     def displayGraph(self):
+     def ShowGraph(self):
           return self.graphDict
 
-     def displayAdjacencyList(self):
+     def ShowAdjacencyList(self):
           for k,v in self.graphDict.items():
                print(k , "|", v)
 
@@ -92,16 +92,16 @@ class Graph:
 
 if __name__ == "__main__":
     g = Graph()
-    g.addVertex("a")
-    g.addVertex("b")
-    g.addVertex("c")
-    g.addVertex("d")
-    g.addVertex("e")
+    g.addVert("a")
+    g.addVert("b")
+    g.addVert("c")
+    g.addVert("d")
+    g.addVert("e")
     g.addEdge("a","b")
     g.addEdge("a","e")
     g.addEdge("a","c")
     g.addEdge("b","e")
     g.addEdge("b","d")
-    g.displayAdjacencyList()
+    g.showAdjacencyList()
     print(g.depthFirstSearch("a"))
     print(g.breadthFirstSearch("a"))
